@@ -13,7 +13,7 @@ export const mutations = {
   updatetodo(state, payload) {
     state.todo = payload
     let index = state.todos.findIndex(todo => todo.id == payload.id)
-    state.todos[index] = payload
+    state.todos.splice(index, 1, payload)
   },
   deletetodo(state, payload) {
     state.todo = {}

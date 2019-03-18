@@ -34,7 +34,7 @@ const api = {
       "/delete-item-by-id/" + todo.id
     );
     if (result.status) {
-      await store.dispatch("todo/deletetodo", result.data);
+      await store.dispatch("todo/deletetodo", todo);
     }
     return result;
   },

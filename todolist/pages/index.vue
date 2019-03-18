@@ -51,6 +51,7 @@ export default {
       let result = await todoApi.createTodo(this.$store, todo);
       if(result.status){
         this.todos = JSON.parse(JSON.stringify(this.$store.state.todo.todos))
+        this.newTodo = ""
       }else{
         this.$message.error(result.message)
       }
