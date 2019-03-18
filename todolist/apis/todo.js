@@ -15,17 +15,17 @@ const api = {
       item: todo
     });
     if (result.status) {
-      await store.dispatch("todo/inserttodo", result.data);
-      return {
-        status: true,
-        todo: result.data
-      };
-    } else return result;
+      await store.dispatch("todo/createtodo", result.data);
+    }
+    return result;
   },
 
   async updateTodo(store, todo) {
-    let response = await this.standardRequest("put", "/update-item", todo);
-    return response;
+    let result = await this.standardRequest("put", "/update-item", todo);
+    if (result.status) {
+      await store.dispatch("todo/updatetodo", todo);
+    }
+    return result;
   },
 
   async deleteTodo(store, todo) {
@@ -34,12 +34,9 @@ const api = {
       "/delete-item-by-id/" + todo.id
     );
     if (result.status) {
-      // await store.dispatch("todo/inserttodo", result.data);
-      return {
-        status: true,
-        todo: result.data
-      };
-    } else return result;
+      await store.dispatch("todo/deletetodo", result.data);
+    }
+    return result;
   },
 
   async standardRequest(methodType, path, data, req) {

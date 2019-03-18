@@ -12,6 +12,8 @@ export const mutations = {
   },
   updatetodo(state, payload) {
     state.todo = payload
+    let index = state.todos.findIndex(todo => todo.id == payload.id)
+    state.todos[index] = payload
   },
   deletetodo(state, payload) {
     state.todo = {}
@@ -24,14 +26,11 @@ export const actions = {
   async inserttodos({ commit }, todos) {
     await commit('inserttodos', todos)
   },
-  async inserttodo({ commit }, todoId) {
-    await commit('inserttodo', response.data)
-  },
   async createtodo({ commit }, todo) {
-    await commit('inserttodo', response.data)
+    await commit('inserttodo', todo)
   },
   async updatetodo({ commit }, todo) {
-    commit('updatetodo', response.data)
+    commit('updatetodo', todo)
   },
   async deletetodo({ commit }, todo) {
     commit('deletetodo', todo)

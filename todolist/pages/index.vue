@@ -5,7 +5,7 @@
         <el-input placeholder="Please input" v-model="newTodo"></el-input>
       </el-col>
       <el-col :span="4">
-        <el-button icon="el-icon-add" @click="addTodo">Thêm</el-button>
+        <el-button icon="el-icon-circle-plus-outline" @click="createTodo">Tạo</el-button>
       </el-col>
     </el-row>
     <el-row v-for="(todo, index) in todos" :key="index" :gutter="20">
@@ -16,7 +16,7 @@
         ></el-input>
       </el-col>
       <el-col :span="4">
-        <el-button icon="el-icon-delete" @click="updateTodo(todo)"
+        <el-button icon="el-icon-edit" @click="updateTodo(todo)"
         >Sửa</el-button
         >
       </el-col>
@@ -39,27 +39,38 @@ export default {
   },
   async fetch({ store, req }) {
     let result = await todoApi.readAllTodos(store, req);
+    if(!result.status){
+      console.log(result.message)
+    }
   },
   methods: {
-    async addTodo() {
+    async createTodo() {
       let todo = {
         name: this.newTodo
       };
       let result = await todoApi.createTodo(this.$store, todo);
       if(result.status){
-        this.todos.push(result.todo);
-        this.newTodo = "";
+        this.todos = JSON.parse(JSON.stringify(this.$store.state.todo.todos))
       }else{
         this.$message.error(result.message)
       }
     },
     async updateTodo(todo) {
       let result = await todoApi.updateTodo(this.$store, todo);
+      if(result.status){
+      }
+      else{
+        this.$message.error(result.message)
+      }
     },
     async deleteTodo(todo) {
       let result = await todoApi.deleteTodo(this.$store, todo);
-      let index = this.todos.findIndex(item => item.id === todo.id);
-      this.todos.splice(index, 1);
+      if(result.status){
+        this.todos = JSON.parse(JSON.stringify(this.$store.state.todo.todos))
+      }
+      else{
+        this.$message.error(result.message)
+      }
     }
   }
 };
