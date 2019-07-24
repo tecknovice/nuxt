@@ -1,6 +1,6 @@
 # demo
 
-> Demo nuxt project, base on jsonplaceholder API and json-server
+> Demo nuxt project, base on jsonplaceholder and json-server
 
 ## Build Setup
 
@@ -9,7 +9,7 @@
 $ npm install -g json-server
 
 #start json-server on port 3001
-$ json-server --watch db.json --port 3001
+$ json-server --watch static/db.json --port 3001
 
 # install dependencies
 $ npm install

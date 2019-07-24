@@ -1,6 +1,6 @@
-# demo-crud
+# crud
 
-> My hunky-dory Nuxt.js project
+> Simple CRUD project
 
 ## Build Setup
 

@@ -1,11 +1,6 @@
 {
   "users": [
     {
-      "name": "hung",
-      "dob": "1/1/1000",
-      "id": 1
-    },
-    {
       "name": "nguyen van hung",
       "dob": "22/10/1989",
       "id": 2
