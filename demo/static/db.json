@@ -217,12 +217,6 @@
     },
     {
       "userId": 1,
-      "id": 2,
-      "title": "title thu 2",
-      "body": "body thu 2body thu 2body thu 2body thu 2body thu 2body thu 2body thu 2body thu 2"
-    },
-    {
-      "userId": 1,
       "id": 3,
       "title": "sửa tiếp",
       "body": "sửa luôn cho nóng"
@@ -715,41 +709,6 @@
     }
   ],
   "comments": [
-    {
-      "postId": 2,
-      "id": 6,
-      "name": "et fugit eligendi deleniti quidem qui sint nihil autem",
-      "email": "Presley.Mueller@myrl.com",
-      "body": "đây là 1 comment mới"
-    },
-    {
-      "postId": 2,
-      "id": 7,
-      "name": "repellat consequatur praesentium vel minus molestias voluptatum",
-      "email": "Dallas@ole.me",
-      "body": "sua lai comment"
-    },
-    {
-      "postId": 2,
-      "id": 8,
-      "name": "et omnis dolorem",
-      "email": "Mallory_Kunze@marie.org",
-      "body": "ut voluptatem corrupti velit\nad voluptatem maiores\net nisi velit vero accusamus maiores\nvoluptates quia aliquid ullam eaque"
-    },
-    {
-      "postId": 2,
-      "id": 9,
-      "name": "provident id voluptas",
-      "email": "Meghan_Littel@rene.us",
-      "body": "sapiente assumenda molestiae atque\nadipisci laborum distinctio aperiam et ab ut omnis\net occaecati aspernatur odit sit rem expedita\nquas enim ipsam minus"
-    },
-    {
-      "postId": 2,
-      "id": 10,
-      "name": "eaque et deleniti atque tenetur ut quo ut",
-      "email": "Carmen_Keeling@caroline.name",
-      "body": "voluptate iusto quis nobis reprehenderit ipsum amet nulla\nquia quas dolores velit et non\naut quia necessitatibus\nnostrum quaerat nulla et accusamus nisi facilis"
-    },
     {
       "postId": 3,
       "id": 11,
@@ -3598,41 +3557,6 @@
       "name": "NGUYEN VAN HUNG",
       "email": "tecknovice@gmail.com",
       "body": "new comment"
-    },
-    {
-      "postId": 2,
-      "id": 503,
-      "name": "NGUYEN VAN HUNG",
-      "email": "tecknovice@gmail.com",
-      "body": "new comment"
-    },
-    {
-      "postId": 2,
-      "id": 505,
-      "name": "NGUYEN VAN HUNG",
-      "email": "tecknovice@gmail.com",
-      "body": "check"
-    },
-    {
-      "postId": 2,
-      "id": 506,
-      "name": "NGUYEN VAN HUNG",
-      "email": "tecknovice@gmail.com",
-      "body": "another thing"
-    },
-    {
-      "postId": 2,
-      "id": 507,
-      "name": "anonymous",
-      "email": "abc@gmail.com",
-      "body": "bài viết vô nghĩa"
-    },
-    {
-      "postId": 2,
-      "id": 509,
-      "name": "dsfdsfsdf",
-      "email": "dsfdsfdsf",
-      "body": "dsfdsfsdfsdf"
     },
     {
       "postId": 1,

@@ -79,3 +79,7 @@ dist
 
 # IDE
 .idea
+
+#fucking dependancies
+package-lock.json
+yarn-lock.json
